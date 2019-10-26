@@ -43,5 +43,6 @@ public class ClassLoaderTest15 {
          */
         System.out.println(System.getProperty("java.system.class.loader"));
         System.out.println(ClassLoader.getSystemClassLoader());
+        System.out.println(ClassLoaderTest13.class.getClassLoader());
     }
 }
