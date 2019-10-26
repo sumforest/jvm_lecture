@@ -3,7 +3,7 @@ package com.sen.jvm.lecture.bytecode;
 /**
  * @Auther: Sen
  * @Date: 2019/10/25 00:40
- * @Description:
+ * @Description: 字节码分析
  */
 public class MyTest1 {
     private int a =1;
