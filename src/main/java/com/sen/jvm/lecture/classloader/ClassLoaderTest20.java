@@ -24,10 +24,11 @@ public class ClassLoaderTest20 {
         // Thread.currentThread().setContextClassLoader(ClassLoaderTest20.class.getClassLoader().getParent());
 
         ServiceLoader<Driver> serviceLoader = ServiceLoader.load(Driver.class);
+        System.out.println("ServiceLoader ClassLoader: " + ServiceLoader.class.getClassLoader());
         Iterator<Driver> iterator = serviceLoader.iterator();
         while (iterator.hasNext()) {
             Driver driver = iterator.next();
-            System.out.println("driver:" + driver.getClass() + "loader:" + driver.getClass().getClassLoader());
+            System.out.println("driver:" + driver.getClass() + " loader:" + driver.getClass().getClassLoader());
         }
 
         System.out.println(Thread.currentThread().getContextClassLoader());
