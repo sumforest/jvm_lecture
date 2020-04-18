@@ -1,7 +1,7 @@
 package com.sen.jvm.lecture.gc;
 
 /**
- * @Auther: Sen
+ * @Author: Sen
  * @Date: 2020/1/9 01:14
  * @Description: 查看GC日志
  * JVM参数：
@@ -27,17 +27,21 @@ public class MyTest1 {
           object space 10240K, 40% used [0x00000000fec00000,0x00000000ff002020,0x00000000ff600000)
          Metaspace       used 3214K, capacity 4496K, committed 4864K, reserved 1056768K
           class space    used 348K, capacity 388K, committed 512K, reserved 1048576K
-
+          年轻代经历minorGC后的大小变化 = 被GC对象大小 + 晋升老年代的对象大小             老年代对象大小
+          (PSYoungGen: 5947K->776K) - ( 5947K->4880K(19456K)) = ParOldGen       total 10240K
+                                        minorGC后的堆大小变化-->被会收的对象总大小
         */
+
         int size = 1024 * 1024;
-       /*
+
+        /*
         byte[] bytes1 = new byte[2 * size];
         byte[] bytes2 = new byte[2 * size];
         byte[] bytes3 = new byte[3 * size];
         */
 
         /*
-        出现Full GC
+        出现Full GC 发生时机：老年代使用量触发GC阈值
         [GC (Allocation Failure) [PSYoungGen: 7994K->776K(9216K)] 7994K->6928K(19456K), 0.0026400 secs] [Times: user=0.06 sys=0.02, real=0.00 secs]
         [Full GC (Ergonomics) [PSYoungGen: 776K->0K(9216K)] [ParOldGen: 6152K->6762K(10240K)] 6928K->6762K(19456K), [Metaspace: 3174K->3174K(1056768K)], 0.0042036 secs] [Times: user=0.00 sys=0.00, real=0.00 secs]
         Hello GC Log !
@@ -72,8 +76,11 @@ public class MyTest1 {
           没有发生Full GC：因为JVM默认当新生代没有足够的空间分配给待分配的对象是，该对象直接分配至老年代
         */
         byte[] bytes1 = new byte[2 * size];
+        System.out.println("--------byte1---------");
         byte[] bytes2 = new byte[2 * size];
+        System.out.println("--------byte2---------");
         byte[] bytes3 = new byte[3 * size];
+        System.out.println("--------byte3---------");
         byte[] bytes4 = new byte[3 * size];
         System.out.println("Hello GC Log !");
     }

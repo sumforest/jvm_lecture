@@ -1,7 +1,7 @@
 package com.sen.jvm.lecture.gc;
 
 /**
- * @Auther: Sen
+ * @Author: Sen
  * @Date: 2020/1/9 16:11
  * @Description: MaxTenuringThreshold参数设置与动态调整
  * -verbose:gc

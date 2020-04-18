@@ -1,9 +1,10 @@
 package com.sen.jvm.lecture.g1;
 
 /**
- * @Auther: Sen
+ * @Author: Sen
  * @Date: 2020/1/10 22:57
- * @Description: G1垃圾收集器日子分析
+ * @Description: G1垃圾收集器日志分析
+ * G1收集器不需要显示指定新生代、老年代的大小，交由G1收集器自动分配以实现期待的停顿时间
  * -verbose:gc
  * -Xms10m
  * -Xmx10m

@@ -3,7 +3,7 @@ package com.sen.jvm.lecture.memory;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @Auther: Sen
+ * @Author: Sen
  * @Date: 2020/1/8 00:19
  * @Description: 利用jconsole和jvisualvm检测死锁
  */

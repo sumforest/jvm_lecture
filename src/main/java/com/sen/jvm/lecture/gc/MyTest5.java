@@ -1,7 +1,7 @@
 package com.sen.jvm.lecture.gc;
 
 /**
- * @Auther: Sen
+ * @Author: Sen
  * @Date: 2020/1/9 19:10
  * @Description: CMS垃圾收集器日志分析
  * -verbose:gc

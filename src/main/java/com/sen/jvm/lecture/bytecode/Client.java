@@ -4,7 +4,7 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
 
 /**
- * @Auther: Sen
+ * @Author: Sen
  * @Date: 2019/10/26 21:48
  * @Description:
  */
@@ -15,10 +15,10 @@ public class Client {
         System.getProperties().setProperty("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
 
         RealSubject realSubject = new RealSubject();
-        InvocationHandler invocate = new DynamicSubject(realSubject);
+        InvocationHandler innovate = new DynamicSubject(realSubject);
         Class<? extends RealSubject> clazz = realSubject.getClass();
         Subject subject = (Subject) Proxy.newProxyInstance(clazz.getClassLoader()
-                , clazz.getInterfaces(), invocate);
+                , clazz.getInterfaces(), innovate);
 
         subject.required();
 

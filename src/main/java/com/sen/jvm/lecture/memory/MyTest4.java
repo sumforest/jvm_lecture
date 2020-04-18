@@ -6,7 +6,7 @@ import net.sf.cglib.proxy.MethodInterceptor;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @Auther: Sen
+ * @Author: Sen
  * @Date: 2020/1/8 01:15
  * @Description: 让元空间先OOM
  * 设置虚拟机参数：
@@ -25,7 +25,7 @@ public class MyTest4 {
             enhancer.setUseCache(false);
             enhancer.setCallback((MethodInterceptor) (obj, method, arg1s, proxy) -> proxy.invokeSuper(obj, arg1s));
             System.out.println("Hello World!");
-            // TimeUnit.MILLISECONDS.sleep(20);
+            // TimeUnit.MILLISECONDS.sleep(1000);
             enhancer.create();
         }
     }

@@ -3,7 +3,7 @@ package com.sen.jvm.lecture.memory;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @Auther: Sen
+ * @Author: Sen
  * @Date: 2020/1/8 02:28
  * @Description: 使用jmap、jstat工具监控虚拟机状态
  */

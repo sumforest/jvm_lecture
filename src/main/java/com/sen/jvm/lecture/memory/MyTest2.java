@@ -3,9 +3,11 @@ package com.sen.jvm.lecture.memory;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @Auther: Sen
+ * @Author: Sen
  * @Date: 2020/1/7 23:26
  * @Description: 虚拟机栈溢出分析
+ * JVM参数：
+ * -Xss100k
  * 抛出Error:java.lang.StackOverflowError
  */
 public class MyTest2 {

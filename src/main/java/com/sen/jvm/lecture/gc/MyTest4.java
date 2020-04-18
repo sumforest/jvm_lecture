@@ -3,7 +3,7 @@ package com.sen.jvm.lecture.gc;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @Auther: Sen
+ * @Author: Sen
  * @Date: 2020/1/9 16:59
  * @Description: TenuringThreshold动态调整
  * -verbose:gc

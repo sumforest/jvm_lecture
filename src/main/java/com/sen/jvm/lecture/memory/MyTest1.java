@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @Auther: Sen
+ * @Author: Sen
  * @Date: 2019/10/27 01:25
  * @Description:
  *  虚拟机栈：Stack Frame 栈帧
@@ -63,6 +63,7 @@ public class MyTest1 {
             java.lang.OutOfMemoryError: Java heap space
             频繁GC
             */
+            //进行full gc不会导致java.lang.OutOfMemoryError: Java heap space
             System.gc();
         }
     }

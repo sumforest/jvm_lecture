@@ -11,7 +11,7 @@ public class ClassLoaderTest10 {
         ClassLoader loader = ClassLoader.getSystemClassLoader();
         System.out.println(loader);
 
-        //在Oracle的jvm中null表示根类加载器
+        // 在Oracle的jvm中null表示根类加载器
         while (loader != null) {
             loader = loader.getParent();
             System.out.println(loader);

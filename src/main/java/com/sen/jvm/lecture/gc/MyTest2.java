@@ -3,7 +3,7 @@ package com.sen.jvm.lecture.gc;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @Auther: Sen
+ * @Author: Sen
  * @Date: 2020/1/9 15:11
  * @Description: 对象的分配分析
  * JVM参数：

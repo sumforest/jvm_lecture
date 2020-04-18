@@ -1,7 +1,7 @@
 package com.sen.jvm.lecture.bytecode;
 
 /**
- * @Auther: Sen
+ * @Author: Sen
  * @Date: 2019/10/25 23:10
  * @Description:
  */
