@@ -11,6 +11,7 @@ package com.sen.jvm.lecture.g1;
  * -XX:+UseG1GC
  * -XX:+PrintGCDetails
  * -XX:+PrintGCDateStamps
+ * 设置停顿时间
  * -XX:MaxGCPauseMillis=200m
  */
 public class MyTest1 {
